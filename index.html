@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Second job tax — why it looks wrong, and when it actually is</title>
+<meta name="description" content="Why a second job is taxed at BR with no allowance, when that is correct and when you are overpaying, how to split your personal allowance across two jobs, and what to do about it.">
+<meta name="keywords" content="second job tax uk, br tax code second job, two jobs tax code, how much tax on second job, split personal allowance two jobs, d0 tax code second job, emergency tax second job, second job national insurance">
+<link rel="canonical" href="https://uk-second-job-tax.pages.dev/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318181b'/%3E%3Cpath d='M14 44V34M26 44V28M38 44V22M50 40V14' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='48' r='4.5' fill='%23f59e0b'/%3E%3C/svg%3E">
+<style>
+  :root{--ink:#1c1917;--mid:#57534e;--line:#e7e5e4;--bg:#fafaf9;--card:#fff;--acc:#b45309;--hot:#b91c1c;--ok:#15803d}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+  .brand{display:flex;align-items:center;gap:.7rem;margin:0 0 2rem;text-decoration:none;color:var(--ink)}
+  .brand svg{width:34px;height:34px;flex:none;border-radius:8px}
+  .brand b{font-size:.95rem;font-weight:600;letter-spacing:-.01em}
+  .brand span{display:block;font-size:.8rem;font-weight:400;color:var(--mid)}
+  h1{font-size:1.8rem;line-height:1.2;margin:0 0 .5rem;letter-spacing:-.02em}
+  h2{font-size:1.15rem;margin:2.5rem 0 .75rem;letter-spacing:-.01em}
+  h3{font-size:1rem;margin:1.5rem 0 .35rem}
+  p{color:var(--mid)}
+  .lede{font-size:1.08rem;color:var(--mid);margin:0 0 1.75rem}
+  a{color:var(--acc)}
+  ul,ol{color:var(--mid)}
+  li{margin:.35rem 0}
+  .scroll{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.5rem 0}
+  th,td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600}
+  .ok{color:var(--ok);font-weight:600}
+  .bad{color:var(--hot);font-weight:600}
+  .note{border-left:3px solid var(--acc);background:var(--card);padding:.15rem 1rem;
+        margin:1.5rem 0;border-radius:0 .4rem .4rem 0}
+  .note.hot{border-left-color:var(--hot)}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.875rem;
+       background:var(--line);padding:.1rem .35rem;border-radius:.25rem}
+  footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line);
+         font-size:.9rem;color:var(--mid)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="brand" href="https://truetakehome.co.uk/">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+    <rect width="64" height="64" rx="14" fill="#18181b"/>
+    <path d="M14 44V34M26 44V28M38 44V22M50 40V14" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="50" cy="48" r="4.5" fill="#f59e0b"/>
+  </svg>
+  <b>True Take-Home<span>Open tools for UK payroll</span></b>
+</a>
+
+<h1>Second job tax</h1>
+<p class="lede">Your second job is taxed from the first pound with no
+allowance, and the payslip looks punitive. Usually that is correct. Sometimes
+it is not — and the difference is worth knowing.</p>
+
+<h2>Why it happens</h2>
+
+<p>You get one personal allowance, not one per job. Your main employer applies
+the whole of it through a normal code like <code>1257L</code>. The second
+employer has none left to give, so HMRC issues <code>BR</code> — basic rate on
+everything, from the first pound.</p>
+
+<p>That is not a penalty for having two jobs. It is the system avoiding giving
+you the allowance twice, which would leave you underpaid and facing a bill.
+The <a href="https://truetakehome.co.uk/tax-code-checker/">tax code
+checker</a> will tell you what any code on either job is doing.</p>
+
+<div class="note">
+<p><strong>The total is what matters, not the split.</strong> Two jobs paying
+£20,000 and £8,000 should cost the same tax as one job paying £28,000. If it
+does not, something in the codes is wrong — not the fact of the second job.</p>
+</div>
+
+<h2>When BR is right, and when it is not</h2>
+
+<div class="scroll">
+<table>
+<tr><th>Your situation</th><th>BR on job 2?</th><th>What should happen</th></tr>
+<tr><td>Main job pays over £12,570</td><td class="ok">Correct</td><td>Allowance is fully used by job 1. Nothing to fix</td></tr>
+<tr><td>Main job pays under £12,570</td><td class="bad">Overpaying</td><td>Part of your allowance is going unused. Ask HMRC to split it</td></tr>
+<tr><td>Combined income over £50,270</td><td class="bad">Underpaying</td><td>BR takes 20% where 40% is due. Expect a bill unless the code is changed to <code>D0</code></td></tr>
+<tr><td>Job 2 is your only job now</td><td class="bad">Wrong</td><td>Job 1 ended and HMRC has not caught up. Send the P45</td></tr>
+</table>
+</div>
+
+<div class="note hot">
+<p><strong>The expensive case is the one that looks fine.</strong> If two jobs
+together push you over £50,270, <code>BR</code> deducts 20% on the second job
+where 40% is owed. Nothing looks wrong on either payslip, and the shortfall
+surfaces later as an underpayment collected through next year's code. The
+<a href="https://truetakehome.co.uk/second-job-tax-calculator/">second job tax
+calculator</a> shows the combined position rather than one job at a time.</p>
+</div>
+
+<h2>Splitting your allowance across two jobs</h2>
+
+<p>If your main job pays less than the personal allowance, some of it is going
+to waste. HMRC can divide the allowance between employers — for example
+<code>600L</code> on one and <code>657L</code> on the other. You ask by
+contacting HMRC with both employers' PAYE references and an estimate of what
+each will pay.</p>
+
+<p>Worth doing when the main job is part-time or seasonal. Not worth doing when
+the main job already exceeds the allowance, because there is nothing left to
+move. The <a href="https://truetakehome.co.uk/hourly-wage-calculator/">hourly
+wage calculator</a> is a quick way to estimate what a variable-hours job will
+actually pay over a year.</p>
+
+<h2>National Insurance works differently, and it is not in your favour</h2>
+
+<p>Income tax is cumulative across the year and self-corrects. National
+Insurance is not: it is calculated <strong>per job, per pay period</strong>,
+with each employment getting its own threshold.</p>
+
+<p>Two jobs at £9,000 each pay little or no employee NI, because neither
+crosses the threshold on its own — a genuine advantage. But the reverse also
+holds: NI is never reconciled across jobs at year end the way income tax is, so
+you cannot reclaim it by filing. The
+<a href="https://truetakehome.co.uk/national-insurance-calculator/">National
+Insurance calculator</a> shows the per-job position.</p>
+
+<div class="note">
+<p><strong>This is the one place two jobs can beat one.</strong> £18,000 from a
+single employer pays employee NI on everything above the threshold. Split
+across two employers at £9,000 each, much of it falls below both thresholds.
+Income tax treats the two cases identically; NI does not.</p>
+</div>
+
+<h2>What to do if it looks wrong</h2>
+
+<ol>
+  <li>Add both gross figures together and check the total against what one job of that size would cost — the <a href="https://truetakehome.co.uk/">take-home pay calculator</a> does this in one go.</li>
+  <li>Check both tax codes. <code>1257L</code> on one and <code>BR</code> on the other is the normal pattern; two codes with allowances is not, and will cause an underpayment.</li>
+  <li>If a job has ended, make sure the P45 reached the other employer — a stale job 1 is the most common cause of a wrong code.</li>
+  <li>If you have overpaid, the <a href="https://truetakehome.co.uk/tax-refund-calculator/">tax refund calculator</a> estimates what is owed back. Income tax overpayments are refundable; NI generally is not.</li>
+  <li>Check a specific payslip line by line with the <a href="https://truetakehome.co.uk/payslip-checker/">payslip checker</a>.</li>
+</ol>
+
+<h2>Related situations</h2>
+
+<ul>
+  <li><a href="https://truetakehome.co.uk/self-employed-tax-calculator/">Self-employed alongside a job</a> — different again: the side income goes through Self Assessment, not PAYE, and your allowance is already spent</li>
+  <li><a href="https://truetakehome.co.uk/overtime-tax-calculator/">Overtime</a> — often confused with a second job, but taxed cumulatively within one employment</li>
+  <li><a href="https://truetakehome.co.uk/bonus-tax-calculator/">A bonus</a> — the same "why was so much taken" feeling, a different cause</li>
+  <li><a href="https://truetakehome.co.uk/adjusted-net-income-calculator/">Adjusted net income</a> — combined income counts towards the £100,000 and £60,000 thresholds, which catches two-job households</li>
+  <li><a href="https://truetakehome.co.uk/student-loan-repayment-calculator/">Student loan</a> — deducted per job above the threshold, so a second job under it pays nothing</li>
+  <li><a href="https://truetakehome.co.uk/salary-comparison-calculator/">Comparing offers</a> — worth running before taking on the second job at all</li>
+</ul>
+
+<p>References:
+<a href="https://hadidevlabx.github.io/uk-tax-code/">tax code decoder</a> for
+any code on either job,
+<a href="https://uk-payslip-glossary.netlify.app/">payslip glossary</a> for the
+abbreviations, and
+<a href="https://uk-adjusted-net-income.onrender.com/">adjusted net income</a>
+if the combined figure is nearing a threshold.</p>
+
+<div class="note">
+<p><strong>Not tax advice.</strong> This explains published HMRC rules. Your
+coding notice and HMRC are the authorities on your own codes.</p>
+</div>
+
+<footer>
+<p>Built alongside <a href="https://truetakehome.co.uk/">True Take-Home</a> ·
+<a href="https://hadidevlabx.github.io/uk-tax-rates/">Rates as JSON</a></p>
+</footer>
+
+</div>
+</body>
+</html>
